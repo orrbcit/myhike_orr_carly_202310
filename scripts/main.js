@@ -1,4 +1,4 @@
-function insertName() {
+function insertNameFromAuth() {
     firebase.auth().onAuthStateChanged(user => {
         // Check if a user is signed in:
         if (user) {
@@ -17,4 +17,4 @@ function insertName() {
         }
     });
 }
-insertName(); //run the function
+insertNameFromAuth(); //run the function
